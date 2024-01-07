@@ -3,6 +3,118 @@
   src: url("fonts/IosevkaNerdFont-Medium.ttf") format("truetype");
 }
 
+@keyframes gmail {
+    25%  {color: #3b60c4;}
+    50%  {color: #08851b;}
+    75%  {color: #f2a60c;}
+    100% {color: #c71610;}
+} 
+
+@keyframes notion {
+    25%  {color: #D9730D;}
+    50%  {color: #9F6B53;}
+    75%  {color: #787774;}
+    100% {color: #37352F;}
+}
+
+@keyframes canva {
+    25%  {color: #04BFCE;}
+    50%  {color: #1C9AD8;}
+    75%  {color: #2984DF;}
+    100% {color: #634BE1;}
+}
+
+@keyframes github {
+    25%  {color: #24292e;}
+    50%  {color: #2b3137;}
+    75%  {color: #fafbfc;}
+    100% {color: #ffffff;}
+}
+
+@keyframes toki {
+    25%  {color: #1E406F;}
+    50%  {color: #5D98E1;}
+    75%  {color: #EDEEF0;}
+    100% {color: #F12313;}
+}
+ 
+@keyframes leetcode {
+    25%  {color: #908E91;}
+    50%  {color: #252525;}
+    75%  {color: #080808;}
+    100% {color: #EFB140;}
+}
+
+@keyframes gfg {
+    25%  {color: #222221;}
+    50%  {color: #243C2A;}
+    75%  {color: #295E35;}
+    100% {color: #2F8D46;}
+}
+
+@keyframes monkeytype {
+    25%  {color: #658471;}
+    50%  {color: #769D81;}
+    75%  {color: #87B691;}
+    100% {color: #ABE9B3;}
+}
+
+@keyframes friv {
+    25%  {color: #610090;}
+    50%  {color: #3F426C;}
+    75%  {color: #1C8841;}
+    100% {color: #08B500;}
+}
+
+@keyframes friv {
+    25%  {color: #610090;}
+    50%  {color: #3F426C;}
+    75%  {color: #1C8841;}
+    100% {color: #08B500;}
+}
+
+@keyframes youtube {
+    25%  {color: #690909;}
+    50%  {color: #870707;}
+    75%  {color: #C40404;}
+    100% {color: #FF0000;}
+}
+
+@keyframes twitter {
+    25%  {color: #AAB8C2;}
+    50%  {color: #657786;}
+    75%  {color: #14171A;}
+    100% {color: #1DA1F2;}
+}
+
+@keyframes hyprland {
+    25%  {color: #00BFC0;}
+    50%  {color: #00DBD3;}
+    75%  {color: #00ADEF;}
+    100% {color: #00A1F6;}
+}
+
+@keyframes eww {
+    25%  {color: #90A4AE;}
+    50%  {color: #884D3D;}
+    75%  {color: #B14625;}
+    100% {color: #D84315;}
+}
+
+@keyframes waybar {
+    25%  {color: #63717C;}
+    50%  {color: #9C5BB6;}
+    75%  {color: #2980B9;}
+    100% {color: #F0C40F;}
+}
+
+@keyframes r-unix {
+    25%  {color: #F0C28E;}
+    50%  {color: #DFDA74;}
+    75%  {color: #85EE93;}
+    100% {color: #8BEAD3;}
+}
+
 body {
     background-color: #181926;
     font-family: "Iosevka";
@@ -96,21 +208,92 @@ li {
   padding: 5px;
 }
 
+a {
+    color: #cad3f5;
+}
+
 a:link {
     text-decoration: none;
 }
 
-a {
-    color: #c6d0f5;
-    font-size: 20px;
+.gmail:hover {
+    /* transition: color 0.7s ease-in-out; */
+    animation: gmail 3s infinite;
+    animation-direction: alternate;
 }
 
-a:hover {
-    color: #8caaee;
+.notion:hover { 
+    animation: notion 3s infinite;
+    animation-direction: alternate;
+}
+
+.canva:hover {
+    animation: canva 3s infinite;
+    animation-direction: alternate;
+}
+
+.github:hover { 
+    animation: github 3s infinite;
+    animation-direction: alternate;
+}
+
+.toki:hover {
+    animation: toki 3s infinite;
+    animation-direction: alternate;
+}
+
+.leetcode:hover { 
+    animation: leetcode 3s infinite;
+    animation-direction: alternate;
+}
+
+.gfg:hover {
+    animation: gfg 3s infinite;
+    animation-direction: alternate;
+}
+
+.monkeytype:hover { 
+    animation: monkeytype 3s infinite;
+    animation-direction: alternate;
+}
+
+.friv:hover {
+    animation: friv 3s infinite;
+    animation-direction: alternate;
+}
+
+.youtube:hover { 
+    animation: youtube 3s infinite;
+    animation-direction: alternate;
+}
+
+.twitter:hover { 
+    animation: twitter 3s infinite;
+    animation-direction: alternate;
+}
+
+.hyprland:hover { 
+    animation: hyprland 3s infinite;
+    animation-direction: alternate;
+}
+
+.eww:hover {
+    animation: eww 3s infinite;
+    animation-direction: alternate;
+}
+
+.waybar:hover { 
+    animation: waybar 3s infinite;
+    animation-direction: alternate;
+}
+
+.r-unix:hover { 
+    animation: r-unix 3s infinite;
+    animation-direction: alternate;
 }
 
 .blinking {
-  animation: opacity 1s ease-in-out infinite;
+  animation: opacity 0.7s ease-in-out infinite;
   opacity: 1;
 }
 
