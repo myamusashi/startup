@@ -61,3 +61,13 @@ function updateTime() {
 }
 
 setInterval(updateTime, 10);
+
+// Add an event listener for when the user leaves the page
+window.addEventListener('beforeunload', function(e) {
+    // Cancel the default event
+    e.preventDefault();
+
+    // Add your animation or transition logic here
+    // For example, fading out the content
+    document.body.style.opacity = '0'; // Change the opacity to create a fade-out effect
+});
