@@ -177,7 +177,7 @@ body::after {
 }
 
 #clock {
-  color: #E8BBC7;
+  /* color: #E8BBC7; */
   margin-right: 10px;
 }
 

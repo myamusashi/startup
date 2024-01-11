@@ -55,19 +55,18 @@ function updateTime() {
     var clockString = hours + ":" + minutes;
     var dateString = day + ", " + month + " " + dayNum + getNumSuffix(dayNum);
 
+    const colors = ["#8caaee", "#e5c890", "#eebebe", "#949cbb"];
+
+    if (hours > 1) document.getElementById("clock").style.color = colors[0];
+    if (hours > 11) document.getElementById("clock").style.color = colors[1];
+    if (hours > 15) document.getElementById("clock").style.color = colors[2];
+    if (hours > 19) document.getElementById("clock").style.color = colors[3];
+
+
     document.getElementById("welcome").innerHTML = welcomeString;
     document.getElementById("clock").innerHTML = clockString;
     document.getElementById("date").innerHTML = dateString;
+
 }
 
 setInterval(updateTime, 10);
-
-// Add an event listener for when the user leaves the page
-// window.addEventListener('beforeunload', function(e) {
-//     // Cancel the default event
-//     e.preventDefault();
-
-//     // Add your animation or transition logic here
-//     // For example, fading out the content
-//     document.body.style.opacity = '0'; // Change the opacity to create a fade-out effect
-// });
