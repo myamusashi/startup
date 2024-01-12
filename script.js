@@ -57,20 +57,34 @@ function updateTime() {
     var clockString = hours + ":" + minutes;
     var dateString = day + ", " + month + " " + dayNum + getNumSuffix(dayNum);
 
+    var pagi = 1;
+    var siang = 11;
+    var sore = 16;
+    var malam = 19;
+
     switch (hours) {
-        case 1:
-            document.getElementById("clock").style.color = colors[0];
+        case hours:
+            if (hours >= pagi) {
+                document.getElementById("clock").style.color = colors[0];
+            }
             break;
-        case 11:
-            document.getElementById("clock").style.color = colors[1];
+        case hours:
+            if (hours >= siang) {
+                document.getElementById("clock").style.color = colors[1];
+            }
             break;
-        case 16:
-            document.getElementById("clock").style.color = colors[2];
+        case hours:
+            if (hours >= sore) {
+                document.getElementById("clock").style.color = colors[2];
+            }
             break;
         case 19:
-            document.getElementById("clock").style.color = colors[3];
+            if (hours >= malam) {
+                document.getElementById("clock").style.color = colors[3];
+            }
             break;
         default:
+            document.getElementById("clock").style.color = "#b4befe";
             break;
     }
 
