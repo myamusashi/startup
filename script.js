@@ -1,4 +1,4 @@
-const firstName = "Gilang"; //Update your own name here.
+const firstName = "Gilang";
 var weekDays = [
     "sunday",
     "monday",
@@ -41,6 +41,8 @@ function getNumSuffix(num) {
 }
 
 function updateTime() {
+    const colors = ["#8caaee", "#e5c890", "#eebebe", "#949cbb"];
+
     var curTime = new Date();
     var hours = curTime.getHours();
     var minutes = curTime.getMinutes();
@@ -55,13 +57,22 @@ function updateTime() {
     var clockString = hours + ":" + minutes;
     var dateString = day + ", " + month + " " + dayNum + getNumSuffix(dayNum);
 
-    const colors = ["#8caaee", "#e5c890", "#eebebe", "#949cbb"];
-
-    if (hours > 1) document.getElementById("clock").style.color = colors[0];
-    if (hours > 11) document.getElementById("clock").style.color = colors[1];
-    if (hours > 15) document.getElementById("clock").style.color = colors[2];
-    if (hours > 19) document.getElementById("clock").style.color = colors[3];
-
+    switch (hours) {
+        case 1:
+            document.getElementById("clock").style.color = colors[0];
+            break;
+        case 11:
+            document.getElementById("clock").style.color = colors[1];
+            break;
+        case 16:
+            document.getElementById("clock").style.color = colors[2];
+            break;
+        case 19:
+            document.getElementById("clock").style.color = colors[3];
+            break;
+        default:
+            break;
+    }
 
     document.getElementById("welcome").innerHTML = welcomeString;
     document.getElementById("clock").innerHTML = clockString;
