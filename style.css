@@ -1,4 +1,4 @@
-@font-face {
+font-face {
   font-family: "Iosevka";
   src: url("fonts/IosevkaNerdFont-Medium.ttf") format("truetype");
 }
@@ -177,7 +177,6 @@ body::after {
 }
 
 #clock {
-  /* color: #E8BBC7; */
   margin-right: 10px;
 }
 
