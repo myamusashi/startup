@@ -41,7 +41,7 @@ function getNumSuffix(num) {
 }
 
 function updateTime() {
-    const colors = ["#8caaee", "#e5c890", "#eebebe", "#949cbb"];
+    const colors = ["#8caaee", "#e5c890", "#eebebe"];
 
     var curTime = new Date();
     var hours = curTime.getHours();
@@ -60,8 +60,6 @@ function updateTime() {
     var pagi = 1 && 10;
     var siang = 11 && 15;
     var sore = 16 && 18;
-    var malam = 19 && 0;
-
 
     switch (true) {
         case hours <= pagi:
@@ -73,19 +71,12 @@ function updateTime() {
         case hours <= sore:
             document.getElementById("clock").style.color = colors[2];
             break;
-        case hours <= malam:
-            document.getElementById("clock").style.color = colors[3];
-            break;
         default:
-            document.getElementById("clock").style.color = "#b4befe";
+            document.getElementById("clock").style.color = "#949cbb";
             break;
     }
-
-
     document.getElementById("welcome").innerHTML = welcomeString;
     document.getElementById("clock").innerHTML = clockString;
     document.getElementById("date").innerHTML = dateString;
-
 }
-
 setInterval(updateTime, 10);
