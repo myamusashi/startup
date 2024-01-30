@@ -1,109 +1,188 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Gilang</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
-</head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body id="body">
     <div class="container">
-        <div class="head">
-            <div class="search-container">
-                <span>> $</span>
-                <span class="blinking">_</span>
-            </div>
-            <div id="welcome"></div>
-            <div class="time">
-                <div id="clock"></div>
-                <div id="date"></div>
-            </div>
+      <div class="head">
+        <div class="search-container">
+          <span onclick="changeBackground()">> $</span>
+          <span class="blinking">_</span>
         </div>
-        <div class="list">
-            <div class="item">
-                <div class="kategori">
-                    <div class="link">
-                        <li class="tanda">Ai assistance </li>
-                        <li><a class="gmail" href="https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx">Bing
-                                Copilot</a></li>
-                        <li><a class="notion" href="https://chat.openai.com/">ChatGPT</a></li>
-                        <li><a class="canva" href="https://www.perplexity.ai/">Perplexity</a></li>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="kategori">
-                    <div class="link">
-                        <li class="tanda">Work </li>
-                        <li><a class="gmail" href="http://gmail.com/">Gmail</a></li>
-                        <li><a class="notion" href="https://www.notion.so">Notion</a></li>
-                        <li><a class="canva" href="https://www.canva.com/">Canva</a></li>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="kategori">
-                    <div class="link">
-                        <li class="tanda">Dev </li>
-                        <li><a class="github" href="https://github.com/">Github</a></li>
-                        <li><a class="toki" href="https://tlx.toki.id/problems">TLX Toki</a></li>
-                        <li><a class="leetcode" href="https://leetcode.com/problemset/">Leetcode</a></li>
-                        <li><a class="gfg"
-                                href="https://www.geeksforgeeks.org/learn-data-structures-and-algorithms-dsa-tutorial/">Struct
-                                & Algo</a></li>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="kategori">
-                    <div class="link">
-                        <li class="tanda">Games & Media </li>
-                        <li><a class="monkeytype" href="https://monkeytype.com/">Monkeytype</a></li>
-                        <li><a class="friv" href="https://www.friv.com/">Friv</a></li>
-                        <li><a class="youtube" href="https://www.youtube.com/">Youtube</a></li>
-                        <li><a class="twitter" href="https://twitter.com/">Twitter</a></li>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="kategori">
-                    <div class="link">
-                        <li class="tanda">Ricing stuff</li>
-                        <li><a class="hyprland" href="https://wiki.hyprland.org">Hyprland</a></li>
-                        <li><a class="eww" href="https://elkowar.github.io/eww/configuration.html">Eww Widget</a></li>
-                        <li><a class="waybar" href="https://github.com/Alexays/Waybar/wiki/">Waybar</a></li>
-                        <li><a class="r-unix" href="https://www.reddit.com/r/unixporn/">r/unix</a></li>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="kategori">
-                    <div class="link">
-                        <li class="tanda">Color & Icons</li>
-                        <li><a class="hyprland" href="https://wiki.hyprland.org">Nerd font icon</a></li>
-                        <li><a class="eww" href="https://fontawesome.com/icons/">Awesome font icon</a></li>
-                        <li><a class="r-unix" href="https://github.com/morhetz/gruvbox">GruvBox</a></li>
-                        <li><a class="r-unix" href="https://github.com/nordtheme/nord">Nord</a></li>
-                        <li><a class="r-unix" href="https://github.com/catppuccin/catppuccin">Catppuccin</a></li>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="kategori">
-                    <div class="link">
-                        <li class="tanda">Wallpaper</li>
-                        <li><a class="hyprland" href="https://wall.alphacoders.com/">Wallpaper Abyss</a></li>
-                        <li><a class="eww" href="https://wallhaven.cc">WallHaven</a></li>
-                        <li><a class="waybar" href="https://wallpaperscraft.com/">Wallpaper Craft</a></li>
-                        <li><a class="r-unix" href="https://unsplash.com/t/wallpapers">Unplash</a></li>
-                    </div>
-                </div>
-            </div>
+        <div id="welcome"></div>
+        <div class="time">
+          <div id="clock"></div>
+          <div id="date"></div>
         </div>
+      </div>
+      <div class="list">
+        <div class="item">
+          <div class="kategori">
+            <div class="link">
+              <li class="tanda">Ai assistance</li>
+              <li>
+                <a
+                  class="gmail"
+                  href="https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx"
+                  >Bing Copilot</a
+                >
+              </li>
+              <li>
+                <a class="notion" href="https://chat.openai.com/">ChatGPT</a>
+              </li>
+              <li>
+                <a class="canva" href="https://www.perplexity.ai/"
+                  >Perplexity</a
+                >
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="kategori">
+            <div class="link">
+              <li class="tanda">Work</li>
+              <li><a class="gmail" href="http://gmail.com/">Gmail</a></li>
+              <li><a class="notion" href="https://www.notion.so">Notion</a></li>
+              <li><a class="canva" href="https://www.canva.com/">Canva</a></li>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="kategori">
+            <div class="link">
+              <li class="tanda">Dev</li>
+              <li><a class="github" href="https://github.com/">Github</a></li>
+              <li>
+                <a class="toki" href="https://tlx.toki.id/problems">TLX Toki</a>
+              </li>
+              <li>
+                <a class="leetcode" href="https://leetcode.com/problemset/"
+                  >Leetcode</a
+                >
+              </li>
+              <li>
+                <a
+                  class="gfg"
+                  href="https://www.geeksforgeeks.org/learn-data-structures-and-algorithms-dsa-tutorial/"
+                  >Struct & Algo</a
+                >
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="kategori">
+            <div class="link">
+              <li class="tanda">Games & Media</li>
+              <li>
+                <a class="monkeytype" href="https://monkeytype.com/"
+                  >Monkeytype</a
+                >
+              </li>
+              <li><a class="friv" href="https://www.friv.com/">Friv</a></li>
+              <li>
+                <a class="youtube" href="https://www.youtube.com/">Youtube</a>
+              </li>
+              <li>
+                <a class="twitter" href="https://twitter.com/">Twitter</a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="kategori">
+            <div class="link">
+              <li class="tanda">Ricing stuff</li>
+              <li>
+                <a class="hyprland" href="https://wiki.hyprland.org"
+                  >Hyprland</a
+                >
+              </li>
+              <li>
+                <a
+                  class="eww"
+                  href="https://elkowar.github.io/eww/configuration.html"
+                  >Eww Widget</a
+                >
+              </li>
+              <li>
+                <a class="waybar" href="https://github.com/Alexays/Waybar/wiki/"
+                  >Waybar</a
+                >
+              </li>
+              <li>
+                <a class="r-unix" href="https://www.reddit.com/r/unixporn/"
+                  >r/unix</a
+                >
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="kategori">
+            <div class="link">
+              <li class="tanda">Color & Icons</li>
+              <li>
+                <a class="hyprland" href="https://www.nerdfonts.com/cheat-sheet"
+                  >Nerd font icon</a
+                >
+              </li>
+              <li>
+                <a class="eww" href="https://fontawesome.com/icons/"
+                  >Awesome font icon</a
+                >
+              </li>
+              <li>
+                <a class="r-unix" href="https://github.com/morhetz/gruvbox"
+                  >GruvBox</a
+                >
+              </li>
+              <li>
+                <a class="r-unix" href="https://github.com/nordtheme/nord"
+                  >Nord</a
+                >
+              </li>
+              <li>
+                <a
+                  class="r-unix"
+                  href="https://github.com/catppuccin/catppuccin"
+                  >Catppuccin</a
+                >
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="kategori">
+            <div class="link">
+              <li class="tanda">Wallpaper</li>
+              <li>
+                <a class="hyprland" href="https://wall.alphacoders.com/"
+                  >Wallpaper Abyss</a
+                >
+              </li>
+              <li><a class="eww" href="https://wallhaven.cc">WallHaven</a></li>
+              <li>
+                <a class="waybar" href="https://wallpaperscraft.com/"
+                  >Wallpaper Craft</a
+                >
+              </li>
+              <li>
+                <a class="r-unix" href="https://unsplash.com/t/wallpapers"
+                  >Unplash</a
+                >
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>
