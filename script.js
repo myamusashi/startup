@@ -100,14 +100,31 @@ function changeBackground() {
   // Change the background color to red
   element.style.backgroundImage = `url(${randomBackgroundImage})`;
 
-  localStorage.setItem("backgroundImage", randomBackgroundImage);
+  localStorage.setItem("backgroundImage", `url(${randomBackgroundImage})`);
 }
 
+// Assuming 'element' is the reference to the HTML element whose backgroundImage you want to retrieve
+const element = document.getElementById("body");
+
+// Check if there's a stored background image URL
 const storedBackgroundImage = localStorage.getItem("backgroundImage");
 
+// If there's a stored background image URL, set it
 if (storedBackgroundImage) {
-  element.style.backgroundImage = `url(${storedBackgroundImage})`;
+  element.style.backgroundImage = storedBackgroundImage;
 } else {
-  // Otherwise, set a new random background image
-  storedBackgroundImage();
+  // Set the initial background image
+  setBackgroundImage();
+}
+
+// Function to set the background image
+function setBackgroundImage() {
+  // Get a random index within the array length
+  const randomIndex = Math.floor(Math.random() * bg_image.length);
+  // Get the random background image URL
+  const randomBackgroundImage = bg_image[randomIndex];
+  // Set the background image of the element
+  element.style.backgroundImage = `url(${randomBackgroundImage})`;
+  // Store the background image URL in localStorage
+  localStorage.setItem("backgroundImage", `url(${randomBackgroundImage})`);
 }
