@@ -90,6 +90,31 @@ const bg_image = [
   "./assets/bg5.webp",
   "./assets/bg6.webp",
   "./assets/bg7.webp",
+  "./assets/bg8.webp",
+  "./assets/bg9.webp",
+  "./assets/bg10.webp",
+  "./assets/bg11.webp",
+  "./assets/bg12.webp",
+  "./assets/bg13.webp",
+  "./assets/bg14.webp",
+  "./assets/bg15.webp",
+  "./assets/bg16.webp",
+  "./assets/bg17.webp",
+  "./assets/bg18.webp",
+  "./assets/bg19.webp",
+  "./assets/bg20.webp",
+  "./assets/bg21.webp",
+  "./assets/bg22.webp",
+  "./assets/bg23.webp",
+  "./assets/bg24.webp",
+  "./assets/bg25.webp",
+  "./assets/bg26.webp",
+  "./assets/bg27.webp",
+  "./assets/bg28.webp",
+  "./assets/bg29.webp",
+  "./assets/bg30.webp",
+  "./assets/bg31.webp",
+  "./assets/bg32.webp",
 ];
 
 function changeBackground() {
@@ -97,34 +122,24 @@ function changeBackground() {
   const randomBackgroundImage = bg_image[randomIndex];
 
   var element = document.getElementById("body");
-  // Change the background color to red
   element.style.backgroundImage = `url(${randomBackgroundImage})`;
 
   localStorage.setItem("backgroundImage", `url(${randomBackgroundImage})`);
 }
 
-// Assuming 'element' is the reference to the HTML element whose backgroundImage you want to retrieve
 const element = document.getElementById("body");
 
-// Check if there's a stored background image URL
 const storedBackgroundImage = localStorage.getItem("backgroundImage");
 
-// If there's a stored background image URL, set it
 if (storedBackgroundImage) {
   element.style.backgroundImage = storedBackgroundImage;
 } else {
-  // Set the initial background image
   setBackgroundImage();
 }
 
-// Function to set the background image
 function setBackgroundImage() {
-  // Get a random index within the array length
   const randomIndex = Math.floor(Math.random() * bg_image.length);
-  // Get the random background image URL
   const randomBackgroundImage = bg_image[randomIndex];
-  // Set the background image of the element
   element.style.backgroundImage = `url(${randomBackgroundImage})`;
-  // Store the background image URL in localStorage
   localStorage.setItem("backgroundImage", `url(${randomBackgroundImage})`);
 }
