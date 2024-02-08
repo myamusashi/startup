@@ -1,0 +1,224 @@
+@keyframes gmail {
+  25% {
+    color: #3b60c4;
+  }
+  50% {
+    color: #08851b;
+  }
+  75% {
+    color: #f2a60c;
+  }
+  100% {
+    color: #c71610;
+  }
+}
+
+@keyframes notion {
+  25% {
+    color: #d9730d;
+  }
+  50% {
+    color: #9f6b53;
+  }
+  75% {
+    color: #787774;
+  }
+  100% {
+    color: #37352f;
+  }
+}
+
+@keyframes canva {
+  25% {
+    color: #04bfce;
+  }
+  50% {
+    color: #1c9ad8;
+  }
+  75% {
+    color: #2984df;
+  }
+  100% {
+    color: #634be1;
+  }
+}
+
+@keyframes github {
+  25% {
+    color: #24292e;
+  }
+  50% {
+    color: #2b3137;
+  }
+  75% {
+    color: #fafbfc;
+  }
+  100% {
+    color: #ffffff;
+  }
+}
+
+@keyframes toki {
+  25% {
+    color: #1e406f;
+  }
+  50% {
+    color: #5d98e1;
+  }
+  75% {
+    color: #edeef0;
+  }
+  100% {
+    color: #f12313;
+  }
+}
+
+@keyframes leetcode {
+  25% {
+    color: #908e91;
+  }
+  50% {
+    color: #252525;
+  }
+  75% {
+    color: #080808;
+  }
+  100% {
+    color: #efb140;
+  }
+}
+
+@keyframes gfg {
+  25% {
+    color: #222221;
+  }
+  50% {
+    color: #243c2a;
+  }
+  75% {
+    color: #295e35;
+  }
+  100% {
+    color: #2f8d46;
+  }
+}
+
+@keyframes monkeytype {
+  25% {
+    color: #658471;
+  }
+  50% {
+    color: #769d81;
+  }
+  75% {
+    color: #87b691;
+  }
+  100% {
+    color: #abe9b3;
+  }
+}
+
+@keyframes friv {
+  25% {
+    color: #610090;
+  }
+  50% {
+    color: #3f426c;
+  }
+  75% {
+    color: #1c8841;
+  }
+  100% {
+    color: #08b500;
+  }
+}
+
+@keyframes youtube {
+  25% {
+    color: #690909;
+  }
+  50% {
+    color: #870707;
+  }
+  75% {
+    color: #c40404;
+  }
+  100% {
+    color: #ff0000;
+  }
+}
+
+@keyframes twitter {
+  25% {
+    color: #aab8c2;
+  }
+  50% {
+    color: #657786;
+  }
+  75% {
+    color: #14171a;
+  }
+  100% {
+    color: #1da1f2;
+  }
+}
+
+@keyframes hyprland {
+  25% {
+    color: #00bfc0;
+  }
+  50% {
+    color: #00dbd3;
+  }
+  75% {
+    color: #00adef;
+  }
+  100% {
+    color: #00a1f6;
+  }
+}
+
+@keyframes eww {
+  25% {
+    color: #90a4ae;
+  }
+  50% {
+    color: #884d3d;
+  }
+  75% {
+    color: #b14625;
+  }
+  100% {
+    color: #d84315;
+  }
+}
+
+@keyframes waybar {
+  25% {
+    color: #63717c;
+  }
+  50% {
+    color: #9c5bb6;
+  }
+  75% {
+    color: #2980b9;
+  }
+  100% {
+    color: #f0c40f;
+  }
+}
+
+@keyframes r-unix {
+  25% {
+    color: #f0c28e;
+  }
+  50% {
+    color: #dfda74;
+  }
+  75% {
+    color: #85ee93;
+  }
+  100% {
+    color: #8bead3;
+  }
+}
