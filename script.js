@@ -149,4 +149,5 @@ fetch("https://api.thecatapi.com/v1/images/search")
   .then((data) => {
     const imageUrl = data[0].url;
     var img = document.getElementById("cat_pic").setAttribute("src", imageUrl);
+    localStorage.setItem("catPicture", imageUrl);
   });
