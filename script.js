@@ -117,6 +117,14 @@ const bg_image = [
   "./assets/bg32.webp",
 ];
 
+const webTittle = document.title;
+window.addEventListener("blur", () => {
+  document.title = "Balik goblok";
+})
+window.addEventListener("focus", () => {
+  document.title = webTittle;
+})
+
 function changeBackground() {
   const randomIndex = Math.floor(Math.random() * bg_image.length);
   const randomBackgroundImage = bg_image[randomIndex];
