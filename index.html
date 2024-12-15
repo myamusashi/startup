@@ -1,192 +1,341 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="style.css" rel="stylesheet" />
-  </head>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="style.css" rel="stylesheet" />
+    </head>
 
-  <body id="body">
-    <div class="container">
-      <div class="head">
-        <div class="search-container">
-          <span onclick="changeBackground()">> $</span>
-          <span class="blinking">_</span>
-        </div>
-        <div id="welcome"></div>
-        <div class="time">
-          <div id="clock"></div>
-          <div id="date"></div>
-        </div>
-      </div>
-      <div class="list">
-        <div class="item">
-          <div class="kategori">
-            <div class="link">
-              <li class="tanda">Ai assistance</li>
-              <li>
-                <a
-                  id="apps"
-                  class="gmail"
-                  href="https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx"
-                  >Bing Copilot</a
-                >
-              </li>
-              <li>
-                <a id="apps" class="notion" href="https://chat.openai.com/">ChatGPT</a>
-              </li>
-              <li>
-                <a id="apps" class="canva" href="https://gemini.google.com/app">Gemini</a>
-              </li>
-              <li>
-                <a id="apps" class="canva" href="https://www.perplexity.ai/">Perplexity</a>
-              </li>
+    <body id="body">
+        <div class="container">
+            <div class="head">
+                <div class="search-container">
+                    <span onclick="changeBackground()">> $</span>
+                    <span class="blinking">_</span>
+                </div>
+                <div id="welcome"></div>
+                <div class="time">
+                    <div id="clock"></div>
+                    <div id="date"></div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="kategori">
-            <div class="link">
-              <li class="tanda">Work</li>
-              <li>
-                <a id="apps" class="gmail" href="http://gmail.com/">Gmail</a>
-              </li>
-              <li>
-                <a id="apps" class="notion" href="https://www.notion.so">Notion</a>
-              </li>
-              <li>
-                <a id="apps" class="canva" href="https://www.canva.com/">Canva</a>
-              </li>
+            <div class="list">
+                <div class="item">
+                    <div class="kategori">
+                        <div class="link">
+                            <li class="tanda">Ai assistance</li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="gmail"
+                                    onclick="window.open('https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx');"
+                                    style="cursor: pointer"
+                                    >Bing Copilot</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="notion"
+                                    onclick="window.open('https://chat.openai.com/');"
+                                    style="cursor: pointer"
+                                    >ChatGPT</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="canva"
+                                    onclick="window.open('https://gemini.google.com/app');"
+                                    style="cursor: pointer"
+                                    >Gemini</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="canva"
+                                    onclick="window.open('https://www.perplexity.ai/');"
+                                    style="cursor: pointer"
+                                    >Perplexity</a
+                                >
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="kategori">
+                        <div class="link">
+                            <li class="tanda">Work</li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="gmail"
+                                    onclick="window.open('http://gmail.com/');"
+                                    style="cursor: pointer"
+                                    >Gmail</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="notion"
+                                    onclick="window.open('https://www.notion.so');"
+                                    style="cursor: pointer"
+                                    >Notion</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="canva"
+                                    onclick="window.open('https://www.canva.com/');"
+                                    style="cursor: pointer"
+                                    >Canva</a
+                                >
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="kategori">
+                        <div class="link">
+                            <li class="tanda">Dev</li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="github"
+                                    onclick="window.open('https://github.com/');"
+                                    style="cursor: pointer"
+                                    >Github</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="toki"
+                                    onclick="window.open('https://tlx.toki.id/problems');"
+                                    style="cursor: pointer"
+                                    >TLX Toki</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="leetcode"
+                                    onclick="window.open('https://leetcode.com/problemset/');"
+                                    style="cursor: pointer"
+                                    >Leetcode</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="gfg"
+                                    onclick="window.open('https://www.geeksforgeeks.org/learn-data-structures-and-algorithms-dsa-tutorial/');"
+                                    style="cursor: pointer"
+                                    >Struct & Algo</a
+                                >
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="kategori">
+                        <div class="link">
+                            <li class="tanda">Games & Media</li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="monkeytype"
+                                    onclick="window.open('https://monkeytype.com/');"
+                                    style="cursor: pointer"
+                                    >Monkeytype</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="friv"
+                                    onclick="window.open('https://www.friv.com/');"
+                                    style="cursor: pointer"
+                                    >Friv</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="youtube"
+                                    onclick="window.open('https://www.youtube.com/');"
+                                    style="cursor: pointer"
+                                    >Youtube</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="twitter"
+                                    onclick="window.open('https://twitter.com/');"
+                                    style="cursor: pointer"
+                                    >Twitter</a
+                                >
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="kategori">
+                        <div class="link">
+                            <li class="tanda">Ricing stuff</li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="hyprland"
+                                    onclick="window.open('https://wiki.hyprland.org');"
+                                    style="cursor: pointer"
+                                    >Hyprland</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="eww"
+                                    onclick="window.open('https://elkowar.github.io/eww/configuration.html');"
+                                    style="cursor: pointer"
+                                    >Eww Widget</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="waybar"
+                                    onclick="window.open('https://github.com/Alexays/Waybar/wiki/');"
+                                    style="cursor: pointer"
+                                    >Waybar</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="r-unix"
+                                    onclick="window.open('https://www.reddit.com/r/unixporn/');"
+                                    style="cursor: pointer"
+                                    >r/unix</a
+                                >
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="kategori">
+                        <div class="link">
+                            <li class="tanda">Color & Icons</li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="hyprland"
+                                    onclick="window.open('https://www.nerdfonts.com/cheat-sheet');"
+                                    style="cursor: pointer"
+                                    >Nerd font icon</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="eww"
+                                    onclick="window.open('https://fontawesome.com/icons/');"
+                                    style="cursor: pointer"
+                                    >Awesome font icon</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="r-unix"
+                                    onclick="window.open('https://github.com/morhetz/gruvbox');"
+                                    style="cursor: pointer"
+                                    >GruvBox</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="r-unix"
+                                    onclick="window.open('https://github.com/nordtheme/nord');"
+                                    style="cursor: pointer"
+                                    >Nord</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="r-unix"
+                                    onclick="window.open('https://github.com/catppuccin/catppuccin');"
+                                    style="cursor: pointer"
+                                    >Catppuccin</a
+                                >
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="kategori">
+                        <div class="link">
+                            <li class="tanda">Wallpaper</li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="hyprland"
+                                    onclick="window.open('https://wall.alphacoders.com/');"
+                                    style="cursor: pointer"
+                                    >Wallpaper Abyss</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="eww"
+                                    onclick="window.open('https://wallhaven.cc');"
+                                    style="cursor: pointer"
+                                    >WallHaven</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="waybar"
+                                    onclick="window.open('https://wallpaperscraft.com/');"
+                                    style="cursor: pointer"
+                                    >Wallpaper Craft</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    id="apps"
+                                    class="r-unix"
+                                    onclick="window.open('https://unsplash.com/t/wallpapers');"
+                                    style="cursor: pointer"
+                                    >Unplash</a
+                                >
+                            </li>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="kategori">
-            <div class="link">
-              <li class="tanda">Dev</li>
-              <li>
-                <a id="apps" class="github" href="https://github.com/">Github</a>
-              </li>
-              <li>
-                <a id="apps" class="toki" href="https://tlx.toki.id/problems">TLX Toki</a>
-              </li>
-              <li>
-                <a id="apps" class="leetcode" href="https://leetcode.com/problemset/">Leetcode</a>
-              </li>
-              <li>
-                <a
-                  id="apps"
-                  class="gfg"
-                  href="https://www.geeksforgeeks.org/learn-data-structures-and-algorithms-dsa-tutorial/"
-                  >Struct & Algo</a
-                >
-              </li>
+            <div class="box">
+                <div>
+                    <h3>Picture of the day</h3>
+                    <img
+                        id="cat_pic"
+                        alt="dude, bad news no network here"
+                        width="230"
+                        height="200"
+                        style="opacity: 1; border-radius: 10%"
+                    />
+                </div>
             </div>
-          </div>
         </div>
-        <div class="item">
-          <div class="kategori">
-            <div class="link">
-              <li class="tanda">Games & Media</li>
-              <li>
-                <a id="apps" class="monkeytype" href="https://monkeytype.com/">Monkeytype</a>
-              </li>
-              <li>
-                <a id="apps" class="friv" href="https://www.friv.com/">Friv</a>
-              </li>
-              <li>
-                <a id="apps" class="youtube" href="https://www.youtube.com/">Youtube</a>
-              </li>
-              <li>
-                <a id="apps" class="twitter" href="https://twitter.com/">Twitter</a>
-              </li>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="kategori">
-            <div class="link">
-              <li class="tanda">Ricing stuff</li>
-              <li>
-                <a id="apps" class="hyprland" href="https://wiki.hyprland.org">Hyprland</a>
-              </li>
-              <li>
-                <a id="apps" class="eww" href="https://elkowar.github.io/eww/configuration.html"
-                  >Eww Widget</a
-                >
-              </li>
-              <li>
-                <a id="apps" class="waybar" href="https://github.com/Alexays/Waybar/wiki/"
-                  >Waybar</a
-                >
-              </li>
-              <li>
-                <a id="apps" class="r-unix" href="https://www.reddit.com/r/unixporn/">r/unix</a>
-              </li>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="kategori">
-            <div class="link">
-              <li class="tanda">Color & Icons</li>
-              <li>
-                <a id="apps" class="hyprland" href="https://www.nerdfonts.com/cheat-sheet"
-                  >Nerd font icon</a
-                >
-              </li>
-              <li>
-                <a id="apps" class="eww" href="https://fontawesome.com/icons/">Awesome font icon</a>
-              </li>
-              <li>
-                <a id="apps" class="r-unix" href="https://github.com/morhetz/gruvbox">GruvBox</a>
-              </li>
-              <li>
-                <a id="apps" class="r-unix" href="https://github.com/nordtheme/nord">Nord</a>
-              </li>
-              <li>
-                <a id="apps" class="r-unix" href="https://github.com/catppuccin/catppuccin"
-                  >Catppuccin</a
-                >
-              </li>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="kategori">
-            <div class="link">
-              <li class="tanda">Wallpaper</li>
-              <li>
-                <a id="apps" class="hyprland" href="https://wall.alphacoders.com/"
-                  >Wallpaper Abyss</a
-                >
-              </li>
-              <li><a class="eww" href="https://wallhaven.cc">WallHaven</a></li>
-              <li>
-                <a id="apps" class="waybar" href="https://wallpaperscraft.com/">Wallpaper Craft</a>
-              </li>
-              <li>
-                <a id="apps" class="r-unix" href="https://unsplash.com/t/wallpapers">Unplash</a>
-              </li>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="box">
-        <div>
-          <h3>Picture of the day</h3>
-          <img
-            id="cat_pic"
-            alt="dude, bad news no network here"
-            width="230"
-            height="200"
-            style="opacity: 1; border-radius: 10%"
-          />
-        </div>
-      </div>
-    </div>
 
-    <script src="./script.js"></script>
-  </body>
+        <script src="./script.js"></script>
+    </body>
 </html>

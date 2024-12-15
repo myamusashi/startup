@@ -8,6 +8,7 @@ font-face {
 #body {
   background-position: center;
   background-attachment: fixed;
+
   background-size: cover;
   font-family: "Iosevka";
   display: flex;
